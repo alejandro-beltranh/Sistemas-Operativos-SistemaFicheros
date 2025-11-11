@@ -65,7 +65,7 @@ int main() {
                 // Mostrar modo (permisos en octal)
                 printf("Modo: %o\n", atr.st_mode);
 
-                // Verificar permiso de lectura del propietario
+                // Verificar permiso de lectura del usuario
                 if ((atr.st_mode & 0400) != 0)
                     printf("→ Permiso R para propietario.\n");
                 else
